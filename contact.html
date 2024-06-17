@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en" class="min-h-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <script src="Javascript/navbar.js"></script>
+    <script src="Javascript/contact.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="icon" href="img/contact_ico.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="h-auto bg-slate-200">
+    <header class="sticky top-0 z-10 mb-0 bg-white text-black">
+      <nav class="px-4 py-1 shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+          <div class="home_img">
+            <a href="index.html"><img src="img/img.png" alt="" /></a>
+          </div>
+          <span
+            class="text-3xl cursor-pointer md:hidden block"
+            aria-expanded="false"
+            aria-controls="navbar-menu"
+          >
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+        <ul
+          class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-1/2 right-0 md:w-auto md:py-0 py-4 md:pr-0 pr-7 md:opacity-100 opacity-0 transition-all ease in duration-500 text-slate-900 bg-white rounded-xl mx-4"
+        >
+          <li class="mx-4 my-3 md:my-0">
+            <a
+              href="index.html"
+              class="text-base hover:underline poppins-semibold"
+              >HOME</a
+            >
+          </li>
+          <li class="mx-4 my-3 md:my-0">
+            <a
+              href="skills.html"
+              class="text-base hover:underline poppins-semibold"
+              >SKILLS</a
+            >
+          </li>
+          <li class="mx-4 my-3 md:my-0">
+            <a
+              href="contact.html"
+              class="text-base hover:underline poppins-semibold"
+              >CONTACT</a
+            >
+          </li>
+          <li>
+            <button
+              class="px-6 py-4 ml-2 rounded-xl bg-slate-700 text-white hover:opacity-80 active:opacity-100 outline-none poppins-light"
+            >
+              <a target="_blank" href="pdf/peter kwamena essibu.pdf">Resume</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex flex-col mx-6 max-w-full mb-4">
+      <section
+        class="flex flex-col md:flex-row gap-4 max-w-full items-center bg-slate-200 rounded-lg shadow-md"
+      >
+        <div class="w-full md:w-1/2 flex flex-col justify-center px-8 py-12">
+          <p class="text-7xl font-bold text-slate-900 mb-4">
+            Let's Get In Touch.
+          </p>
+          <p class="text-lg leading-8 text-gray-700 poppins-light">
+            Have a project in mind? Need some expert advice? Don't hesitate to
+            send me an email. I'm always available to answer your questions and
+            discuss your needs.
+          </p>
+        </div>
+        <div class="hidden md:block w-1/2">
+          <img
+            src="img/contact_img.png"
+            alt="Contact Image"
+            class="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col justify-center px-8 py-12">
+          <form
+            id="form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="w-full flex flex-col gap-4"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="3ca7a10a-1099-4e98-9f8c-19c816918523"
+            />
+            <input
+              type="checkbox"
+              name="botcheck"
+              id=""
+              style="display: none"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Submission from your Website"
+            />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter Your Name"
+              class="p-3 rounded-lg bg-white poppins-light outline-none"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Your Email"
+              class="p-3 rounded-lg bg-white poppins-light outline-none"
+            />
+            <input
+              type="subject"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              class="p-3 rounded-lg bg-white poppins-light outline-none"
+            />
+            <textarea
+              name="message"
+              id="message"
+              required
+              rows="5"
+              placeholder="Your message here"
+              class="p-3 rounded-lg bg-white flex-grow poppins-light outline-none"
+            ></textarea>
+            <button
+              type="submit"
+              class="p-3 rounded-md bg-slate-700 text-white hover:opacity-80 active:opacity-100 hover:animate-ping active:animate-bounce outline-none"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="p-4 mt-1">
+      <section
+        class="flex flex-col items-center justify-center md:flex-row md:justify-between md:items-center"
+      >
+        <div class="hidden md:block lg:block">
+          <p class="text-gray-500 text-sm ml-10 poppins-light">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+        <div class="items-center lg:mx-4">
+          <div class="flex flex-row lg:mx-auto">
+            <a
+              target="_blank"
+              href="mailto:essibupeterk10@gmail.com"
+              aria-label="Email"
+            >
+              <p class="poppins-light text-base font-semibold text-gray-800">
+                M A I L
+              </p>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.github.com/peterkessibu"
+              aria-label="GitHub"
+            >
+              <p
+                class="poppins-light text-base font-semibold mx-4 text-gray-800"
+              >
+                G I T H U B
+              </p>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/peteressibu"
+              aria-label="LinkedIn"
+            >
+              <p
+                class="poppins-light text-base font-semibold text-gray-800 lg:mr-4"
+              >
+                L I N K E D I N
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
