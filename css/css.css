@@ -38,3 +38,12 @@ html {
 .home_img {
   width: 50%;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#element {
+  height: 100vh; /* 100% of the viewport height */
+}
